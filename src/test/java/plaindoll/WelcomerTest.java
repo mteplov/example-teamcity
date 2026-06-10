@@ -8,8 +8,8 @@ import org.junit.Test;
 public class WelcomerTest {
 	
 	private Welcomer welcomer = new Welcomer();
-	// Если хочешь больше веселья и информации про ДевОпс - приходи в мои каналы NotOps (telegram, YT, Boosty, Patreon)
-	// https://t.me/notopsofficial
+	// Домашнее задание от нетологиии
+	// test
 
 	@Test
 	public void welcomerSaysWelcome() {
@@ -31,5 +31,10 @@ public class WelcomerTest {
 	@Test
 	public void welcomerSaysSomething(){
 		assertThat(welcomer.saySome(), containsString("something"));
+	}
+	//My new test
+	@Test
+	public void welcomerSaysAJoke(){
+	    assertThat(welcomer.sayAJoke(), containsString("hunter"));
 	}
 }
